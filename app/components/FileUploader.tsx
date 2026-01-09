@@ -19,7 +19,7 @@ const FileUploader = ({ onFileSelect }: FileUploaderProps) => {
         onDrop,
         multiple: false,
         accept: { 'application/pdf': ['.pdf']},
-        maxSize: 20*1024*1024,
+        maxSize: maxFileSize,
     })
 
     const file = acceptedFiles[0] || null;
